@@ -33,12 +33,12 @@ std::vector<int> fib(int num)
         arr.push_back(0);
         return arr;
     } else {
-        size_t numStep = 1;
-        size_t numStep2 = 2;
+        size_t numSteps = 1;
+        size_t numSteps2 = 2;
         arr.push_back(0);
         arr.push_back(1);
         for (size_t i = 2; i <= num; ++i) {
-            arr.push_back(arr[i - numStep] + arr[i - numStep2]);
+            arr.push_back(arr[i - numSteps] + arr[i - numSteps2]);
         }
     }
 
