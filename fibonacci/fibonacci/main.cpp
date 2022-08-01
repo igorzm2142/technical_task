@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-std::vector<int> fib(int n);
+std::vector<int> fib(int num);
 
 int main()
 {
