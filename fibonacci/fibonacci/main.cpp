@@ -11,6 +11,9 @@ int main()
     if (!std::cin) {
         std::cerr << "Input error!!!\n";
         return 1;
+    } else {
+        std::cin.clear(); 
+        std::cin.ignore(32767, '\n');
     }
     std::vector<int> resultFib = fib(numFib);
     for (const auto &i : resultFib) {
