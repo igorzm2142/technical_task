@@ -8,7 +8,10 @@ int main()
     std::cout << "Enter Fibonacci number: ";
     int numFib;
     std::cin >> numFib;
-
+    if (!std::cin) {
+        std::cerr << "Input error!!!\n";
+        return 1;
+    }
     std::vector<int> resultFib = fib(numFib);
     for (const auto &i : resultFib) {
         std::cout << "Fibonacci = " << i << '\n';
