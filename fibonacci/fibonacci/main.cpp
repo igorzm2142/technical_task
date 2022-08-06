@@ -29,14 +29,15 @@ int main()
 std::vector<int> fib(int num)
 {
     std::vector<int> arr;
+    const int defaultVal = 0;
     const int minNumFib = 0;
     const int maxNumFib = 30;
     if (num < minNumFib || num > maxNumFib) {
         std::cerr << "Error !!! number Fibonacci must not be < 0 or > 30\n";
-        arr.push_back(num);
+        arr.push_back(defaultVal);
         return arr;
-    } else if (num == 0) {
-        arr.push_back(0);
+    } else if (num == minNumFib) {
+        arr.push_back(defaultVal);
         return arr;
     } else {
         size_t numSteps = 1;
